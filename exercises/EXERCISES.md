@@ -4,7 +4,7 @@ Exercise 1:
 
 * Create a fastify application for a pizza ordering backend service;
 * Create a healthcheck controller that returns 'OK' text response;
-* Create pizza ingredients stock management controller that receives request with a body that provides details of a received pizza order
+* Create pizza ordering controller that receives request with a body that provides details of a received pizza order
 * Implement validation for the request body, using one of the following:
   * [Built-in Fastify validator](https://fastify.dev/docs/latest/Reference/Validation-and-Serialization/);
   * [Zod](https://zod.dev/);
