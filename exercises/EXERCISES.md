@@ -17,9 +17,10 @@ Exercise 1:
 Exercise 2:
   * Create OrderService for your application, which implements `placeOrder` method, which needs to include the following logic, using the Strategy pattern (https://refactoring.guru/design-patterns/strategy):
     * If order is submitted out of the working hours, reject it;
-    * If order is submitted out of peak hours, apply 10% discount;
-    * Ir order is above 100 EUR total cost, apply 20% discount 
+    * If order is submitted out of peak hours, apply Y% (specific to country) discount;
+    * Ir order is above X EUR (specific to country) total cost, apply Y% (specific to country) discount 
     * In case several discounts are applied, the larger one wins, they are not summed.
+    * Support multiple countries with different working hours and discount thresholds and sizes.
   * Implement tests that validate all of the rules for the service;
   * Implement persistence layer with drizzle (https://orm.drizzle.team/docs/get-started/postgresql-new):
     * Create drizzle configuration file;
