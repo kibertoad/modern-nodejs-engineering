@@ -24,7 +24,7 @@ Pull request 2:
 * Create ShipmentService for your application, which implements `registerShipment` method, that needs to include the following logic, using the Strategy pattern (https://refactoring.guru/design-patterns/strategy), and expecting the following parameters: targetWarehouse (string), ingredients (id: string, units: number) - array:
   * If ingredient shipment is submitted out of the working hours for the target warehouse, reject it;
   * If ingredient shipment has less than minimum amount of units of the warehouse, reject it;
-  * If ingredient shipment has more than maximum amount of units for the warehouse, split it into multiple shipments of up to 1000 units;
+  * If ingredient shipment has more than maximum amount of units for the warehouse, split it into multiple shipments of up to 1000 units (see [USEFUL_ALGORITHMS.md](./USEFUL_ALGORITHMS.md) for a splitting algorithm);
   * Support multiple warehouses with different working hours and minimum and maximum amounts of units.
 * Implement tests that validate all of the rules for the service;
 * Implement persistence layer with drizzle (https://orm.drizzle.team/docs/get-started/postgresql-new):
