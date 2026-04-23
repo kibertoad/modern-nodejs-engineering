@@ -5,6 +5,7 @@ The following technologies are used in this course:
 * Testing framework: [vitest](https://vitest.dev/))
 * Validation framework: [zod](https://github.com/colinhacks/zod)
 * SQL builder: [drizzle](https://orm.drizzle.team/) (acceptable alternative: kysely)
+* API contracts: [api-contracts](https://github.com/lokalise/shared-ts-libs/tree/main/packages/app/api-contracts), [fastify-api-contracts](https://github.com/lokalise/shared-ts-libs/tree/main/packages/app/fastify-api-contracts) (acceptable alternative: [orpc](https://orpc.dev/))
 
 Bonus points advanced topics:
 * API contracts: [@lokalise/api-contracts](https://github.com/lokalise/shared-ts-libs/tree/main/packages/app/api-contracts) + [@fastify/api-contracts](https://github.com/lokalise/shared-ts-libs/tree/main/packages/app/fastify-api-contracts) 

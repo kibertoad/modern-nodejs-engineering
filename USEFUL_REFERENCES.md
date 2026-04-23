@@ -13,3 +13,5 @@ Recommended reading:
 * [Refactoring: 2nd edition](https://www.goodreads.com/book/show/218464849-refactoring)
 * [The Pragmatic Programmer: 20th Anniversary Edition](https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/)
 * [Implementation Patterns](https://www.goodreads.com/book/show/781559.Implementation_Patterns)
+
+You can see an example of a monorepo configuration of a service + API contracts here - https://github.com/lokalise/node-service-template/ (uses pnpm, which is ok to use for our exercises)
