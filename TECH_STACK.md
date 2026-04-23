@@ -7,6 +7,7 @@ The following technologies are used in this course:
 * SQL builder: [drizzle](https://orm.drizzle.team/) (acceptable alternative: kysely)
 * API contracts: [api-contracts](https://github.com/lokalise/shared-ts-libs/tree/main/packages/app/api-contracts), [fastify-api-contracts](https://github.com/lokalise/shared-ts-libs/tree/main/packages/app/fastify-api-contracts) (acceptable alternative: [orpc](https://orpc.dev/))
 * Contract-aware HTTP client: [backend-http-client](https://github.com/lokalise/shared-ts-libs/tree/main/packages/app/backend-http-client)
+* Monorepo (for gluing together multiple services and api-contract package) - [pnpm](https://pnpm.io/installation) or [npm with workspaces](https://docs.npmjs.com/cli/v8/using-npm/workspaces)
 
 Bonus points advanced topics:
 * API contracts: [@lokalise/api-contracts](https://github.com/lokalise/shared-ts-libs/tree/main/packages/app/api-contracts) + [@fastify/api-contracts](https://github.com/lokalise/shared-ts-libs/tree/main/packages/app/fastify-api-contracts) 
