@@ -36,3 +36,8 @@ Exercise 2:
       * `deleteOrder` method;
     * Implement tests for all the methods
     * Adjust service to use the repository for creating orders.
+
+Exercise 3:
+  * Create an API contract for Shipment Service, which specified retrieving an amount of a specific type of ingredient currently available in the warehouse.
+  * Implement a new Shipment Service endpoint, utilizing the API contract, for providing the ingredient availability.
+  * Implement a call from Order Service to Shipment Service for checking the ingredient availability, using the API contract.
