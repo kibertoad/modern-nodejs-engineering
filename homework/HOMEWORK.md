@@ -46,3 +46,14 @@ Grading details for pull request 2:
   * 6 points: service and one business rule are implemented. repository is implemented with in-memory storage without drizzle
   * 8 points: service, all business rules and multi-warehouse support are implemented. repository is implemented with in-memory storage without drizzle
   * 10 points: service, all business rules and multi-warehouse support are implemented. repository is implemented with PostgreSQL storage using drizzle (or kysely)
+
+Pull request 3:
+* Create an API contract for Pizza Ordering Service, which sends information about pizzas that have been made (type and amount). (https://github.com/lokalise/shared-ts-libs/tree/main/packages/app/api-contracts)
+* Implement a new Pizza Ordering Service endpoint, utilizing the API contract, for marking received orders as ready (https://github.com/lokalise/shared-ts-libs/tree/main/packages/app/fastify-api-contracts).
+* Implement a call from Pizza Production Service to Pizza Ordering Service for checking the ingredient availability, using the API contract. (https://github.com/lokalise/shared-ts-libs/tree/main/packages/app/backend-http-client)
+* Use monorepo setup, via pnpm (https://pnpm.io/) or npm workspaces (https://docs.npmjs.com/cli/v8/using-npm/workspaces) to share API contract package between Pizza Production Service and Pizza Ordering Service. 
+
+Grading details for pull request 3:
+* 6 points: API contract is implemented
+* 8 points: API contract is used to implement a new endpoint in Pizza Ordering Service
+* 10 points: same API contract is used between Pizza Production Service and Pizza Ordering Service
