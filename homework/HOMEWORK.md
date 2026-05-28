@@ -57,3 +57,12 @@ Grading details for pull request 3:
 * 6 points: API contract is implemented
 * 8 points: API contract is used to implement a new endpoint in Pizza Ordering Service
 * 10 points: same API contract is used between Pizza Production Service and Pizza Ordering Service
+
+Pull request 4:
+* Create a background job ExpirationJob using BullMQ (redis) or pg-boss (postgresql) in Pizza Shipment Service
+* This job triggers once per day (see https://docs.bullmq.io/guide/job-schedulers/repeat-strategies -> Cron or https://timgit.github.io/pg-boss/#/./api/scheduling) and deletes all shipments that are older than a week (they are considered expired and not good to use anymore)
+* Create a background job StaleOrderJob using BullMQ (redis) or pg-boss (postgresql) in Pizza Ordering Service. Job instance is scheduled every time a new order is received, it fires once after two hours (see https://docs.bullmq.io/guide/jobs/delayed or https://timgit.github.io/pg-boss/#/./api/jobs -> startAfter), and if order is still not finished, marks it as stale.
+
+Grading details for pull request 4:
+* 8 points: ExpirationJob is implemented
+* 10 points: ExpirationJob and StaleOrderJob are implemented
