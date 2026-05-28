@@ -50,7 +50,7 @@ Grading details for pull request 2:
 Pull request 3:
 * Create an API contract for Pizza Ordering Service, which sends information about pizzas that have been made (type and amount). (https://github.com/lokalise/shared-ts-libs/tree/main/packages/app/api-contracts)
 * Implement a new Pizza Ordering Service endpoint, utilizing the API contract, for marking received orders as ready (https://github.com/lokalise/shared-ts-libs/tree/main/packages/app/fastify-api-contracts).
-* Implement a call from Pizza Ordering Service to Pizza Production Service (or Shipment Service if it is available) for checking the ingredient availability, using the API contract. (https://github.com/lokalise/shared-ts-libs/tree/main/packages/app/backend-http-client)
+* Implement a call from Pizza Ordering Service to Pizza Shipment Service for checking the ingredient availability, using the API contract. (https://github.com/lokalise/shared-ts-libs/tree/main/packages/app/backend-http-client)
 * Use monorepo setup, via pnpm (https://pnpm.io/) or npm workspaces (https://docs.npmjs.com/cli/v8/using-npm/workspaces) to share API contract package between Pizza Production Service and Pizza Ordering Service. 
 
 Grading details for pull request 3:
